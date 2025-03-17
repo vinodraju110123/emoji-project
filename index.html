@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./style.css">
-    <title>Emoji Search</title>
-
-</head>
-<body>
-    <div class="main">
-        <h1>Emojee - Emoji 🔍 Application</h1>
-        <br>
-        <div class="navbar">
-            <!-- <img src="" id="random-emogi" alt=""> -->
-            <div id="filter-emogi">
-                <button class="filter-btn" data-category="all">All</button>
-                <button class="filter-btn" data-category="face">Face</button>
-                <button class="filter-btn" data-category="heart">Heart</button>
-                <button class="filter-btn" data-category="book">Book</button>
-                <button class="filter-btn" data-category="hand">Hand</button>
-                <button class="filter-btn" data-category="sports">sports</button>
-                <button class="filter-btn" data-category="flag">Flag</button>
-            </div>            
-            <input id="search" type="text" placeholder="Search Emoji...">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Search Application</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="title">Emoji Mart</p>
+      <p class="short-info">A simple emoji search tool.</p>
+      <div class="search-bar-btn-tab">
+        <div class="btns-container">
+          <button>All</button>
+          <button>Face</button>
+          <button>Heart</button>
+          <button>Book</button>
+          <button>Hand</button>
+          <button>Sports</button>
+          <button>Flag</button>
         </div>
-        <br>
-        <div id="display-emoji"></div>
-    </div>
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search for a Keyword..."
+            id="search-input"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="emojis-container"></div>
+    </main>
 
-    <script src="./randomemoji.js"></script>
-    <script src="./data.js"></script>
-    <script src="./script.js"></script>
-</body>
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
